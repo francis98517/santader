@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositar Dinheiro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .menu-lateral {
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .menu-lateral a {
+            color: white;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .menu-lateral a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+            width: calc(100% - 260px);
+        }
+
+        .info-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .transactions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .transactions-table th, .transactions-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .transactions-table th {
+            background-color: #f4f4f4;
+        }
+
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Menu Lateral -->
+        <div class="menu-lateral">
+            <a href="#">Gerenciar Conta</a>
+            <a href="#">Depositar Dinheiro</a>
+            <a href="#">Levantamento sem cartão</a>
+            <a href="#">Planos e Investimentos</a>
+            <a href="#">Levantar Dinheiro</a>
+            <a href="#">Movimentos</a>
+            <a href="#">Minha Equipe</a>
+            <a href="#">Grupo WhatsApp</a>
+            <a href="#">Configurações Gerais</a>
+            <a href="#">Sair</a>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <h2>Depositar Dinheiro</h2>
+
+            <!-- Caixa de Informações sobre Depósitos -->
+            <div class="info-box">
+                <h3>Histórico de Depósitos</h3>
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Valor</th>
+                            <th>Imposto/IVA</th>
+                            <th>Após a Taxa</th>
+                            <th>Iniciado em</th>
+                            <th>Método</th>
+                            <th>Estado</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#GCTB3883MNWK</td>
+                            <td>10,000.00 Kz</td>
+                            <td>0.00 Kz</td>
+                            <td>10,000.00 Kz</td>
+                            <td>2024-11-19 01:40 PM</td>
+                            <td>Pagamento por Referência</td>
+                            <td>Approved</td>
+                            <td><a class="link" href="#">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td>#GCTB3883MNWK</td>
+                            <td>5,000.00 Kz</td>
+                            <td>0.00 Kz</td>
+                            <td>5,000.00 Kz</td>
+                            <td>2024-11-18 03:20 PM</td>
+                            <td>Pagamento por Referência</td>
+                            <td>Approved</td>
+                            <td><a class="link" href="#">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td>#GCTB3883MNWK</td>
+                            <td>3,000.00 Kz</td>
+                            <td>0.00 Kz</td>
+                            <td>3,000.00 Kz</td>
+                            <td>2024-11-17 10:00 AM</td>
+                            <td>Pagamento por Referência</td>
+                            <td>Pending</td>
+                            <td><a class="link" href="#">Detalhes</a></td>
+                        </tr>
+                        <!-- Mais transações podem ser adicionadas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
